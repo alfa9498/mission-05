@@ -1,6 +1,7 @@
+// main.jsx
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./LoginForm";
+import App from "./App"; // Pastikan mengimpor App, bukan LoginForm
 import "./LoginForm.css"; // Jika ada file CSS global
 
 // Membuat root DOM

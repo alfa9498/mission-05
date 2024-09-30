@@ -177,21 +177,23 @@ button {
   border-top: 1px solid #dcdcdc; /* Garis atas */
   text-align: center; /* Teks di tengah */
 }
-
 /* Google Login */
 .google-login {
+  color: #595959; /* Warna teks untuk login Google */
   margin-top: 20px; /* Jarak atas */
 }
 
 .google-button {
-  background-color: #db4437; /* Warna merah Google */
-  color: white; /* Warna teks putih */
+  background-color: #ffffff; /* Background putih */
+  color: #595959; /* Warna teks menjadi #595959 */
   display: flex; /* Menggunakan flexbox untuk konten */
   align-items: center; /* Vertikal center */
   justify-content: center; /* Horizontal center */
+  border: 2px solid #dcdcdc; /* Tambahkan border untuk tombol */
 }
 
 .google-icon {
+  color: #595959; /* Warna ikon Google diubah sesuai teks */
   width: 20px; /* Ukuran ikon Google */
   height: 20px; /* Ukuran ikon Google */
   margin-right: 10px; /* Jarak kanan */
@@ -200,7 +202,6 @@ button {
 /* Media Query untuk Responsivitas */
 @media (max-width: 768px) {
   .login-box {
-    font size: 14px;
     margin-top: 0.2px;
     width: 70%; /* Lebar 70% pada layar kecil */
     padding: 20px; /* Padding dalam box */

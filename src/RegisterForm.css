@@ -1,0 +1,169 @@
+/* Styling dasar */
+body,
+html,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Container Utama untuk Register Form */
+.register-main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  background-color: #fff4e6; /* Warna krem terang */
+}
+
+/* Container Logo untuk Register Form */
+.register-logo-container {
+  width: 100%;
+  background-color: white;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* Box Logo */
+.register-logo-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 237px;
+  height: 56px;
+}
+
+.register-logo {
+  width: 100%;
+  height: auto;
+}
+
+/* Container Register */
+.register-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  padding: 36px 0;
+}
+
+/* Box Register */
+.register-form-box {
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading dan Paragraf */
+.register-form-box h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.8em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.register-form-box p {
+  font-family: "Poppins", sans-serif;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Styling form */
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Styling untuk input */
+.register-input-field {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #dcdcdc;
+  border-radius: 8px;
+  font-size: 1em;
+  box-sizing: border-box;
+}
+
+/* Styling untuk form-group */
+.register-form-group {
+  text-align: left;
+}
+
+/* Bendera + kode telepon */
+
+.register-phone-number {
+  flex-grow: 1;
+}
+
+/* Styling tombol */
+button {
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1em;
+  width: 100%;
+  border: none;
+  font-weight: bold;
+}
+
+/* Tombol Daftar */
+.register-submit-button {
+  background-color: #3ecf4c;
+  color: #fff;
+}
+
+.register-submit-button:hover {
+  background-color: #28a745;
+}
+
+/* Link Lupa Password */
+.register-forgot-password {
+  font-size: 0.9em;
+  color: #626364;
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+.register-forgot-password:hover {
+  text-decoration: underline;
+}
+
+/* Link Masuk */
+.register-login-link {
+  display: block;
+  margin-top: 10px;
+  color: #3ecf4c;
+  text-align: center;
+}
+
+.register-login-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsivitas */
+@media (max-width: 768px) {
+  .register-form-box {
+    width: 70%;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .register-form-box {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .register-flag-icon {
+    width: 20px;
+  }
+}

@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import "./LoginForm.css";
 import { MdVisibility, MdVisibilityOff } from "react-icons/md"; // Import ikon visibility
 import logo from "./assets/logo.png"; // Pastikan path logo sudah benar
+import googleIcon from "./assets/google.svg";
 
-const LoginForm = () => {
+const LoginForm = ({ toggleForm }) => {
   const [isPasswordVisible, setIsPasswordVisible] = useState(false); // State untuk mengatur visibilitas password
 
   const togglePasswordVisibility = () => {
@@ -53,21 +54,19 @@ const LoginForm = () => {
             <button type="submit" className="btn login-button">
               Masuk
             </button>
-            <button type="button" className="btn register-button">
+            <button
+              type="button"
+              className="btn register-button"
+              onClick={toggleForm} // Panggil toggleForm untuk berpindah ke form register
+            >
               Daftar
             </button>
           </form>
           <div className="line">atau</div>
-          <div className="google-login">
-            <button className="google-button">
-              <img
-                src="./assets/google-icon.png"
-                alt="Google"
-                className="google-icon"
-              />
-              Login dengan Google
-            </button>
-          </div>
+          <button className="google-button">
+            <img src={googleIcon} alt="Google Icon" className="google-icon" />
+            Login dengan Google
+          </button>
         </div>
       </div>
     </div>
