@@ -1,8 +1,5 @@
-/* src/LoginForm.css */
-
 /* Gaya Dasar untuk Container Utama */
-body,
-html,
+
 #root {
   height: 100%;
   margin: 0;
@@ -49,34 +46,36 @@ html,
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 80px; /* Kurangi nilai margin atas */
+  margin-top: 50px; /* Sesuaikan margin atas */
   padding: 36px 0; /* Kurangi padding atas dan bawah */
+  width: 100%; /* Lebar penuh */
+  height: auto; /* Tinggi otomatis */
 }
 
 /* Box Login */
 .login-box {
   text-align: center;
-  width: 100%; /* Menggunakan 100% dari lebar layar */
-  max-width: 900px; /* Maksimum lebar diperbesar */
-  padding: 20px; /* Padding untuk box login */
+  width: 100%; /* Gunakan 100% lebar */
+  max-width: 600px; /* Lebar maksimum diperbesar */
+  padding: 40px; /* Padding lebih besar untuk konten */
   background-color: #ffffff; /* Latar belakang putih untuk login box */
-  border-radius: 8px; /* Sudut yang dibulatkan */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Bayangan */
+  border-radius: 12px; /* Sudut yang dibulatkan lebih besar */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Bayangan lebih besar */
 }
 
 /* Heading dan Paragraf */
 .login-box h2 {
   font-family: "Poppins", sans-serif;
-  font-size: 1.8em; /* Ukuran font judul */
+  font-size: 2em; /* Ukuran font judul lebih besar */
   color: #333; /* Warna teks */
-  margin: 0 0 10px; /* Jarak bawah */
+  margin: 0 0 20px; /* Jarak bawah */
 }
 
 .login-box p {
   font-family: "Poppins", sans-serif;
   text-align: center; /* Teks di tengah */
   color: #666; /* Warna teks */
-  margin: 0 0 20px; /* Jarak bawah */
+  margin: 0 0 30px; /* Jarak bawah */
 }
 
 /* Styling untuk form */
@@ -84,7 +83,7 @@ form {
   font-family: "DM Sans", sans-serif;
   color: #666; /* Warna teks */
   text-align: left;
-  margin-top: 50px;
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   gap: 15px; /* Jarak antar elemen form ditambah */
@@ -94,10 +93,10 @@ form {
 .input-field {
   font-family: "Poppins", sans-serif;
   width: 100%; /* Lebar penuh */
-  padding: 10px; /* Padding dalam input */
+  padding: 15px; /* Padding lebih besar */
   border: 2px solid #dcdcdc; /* Border */
   border-radius: 8px; /* Sudut yang dibulatkan */
-  font-size: 1em; /* Ukuran font */
+  font-size: 1.1em; /* Ukuran font */
   box-sizing: border-box; /* Memastikan padding termasuk dalam lebar */
 }
 
@@ -110,13 +109,18 @@ form {
   padding-right: 40px; /* Ruang untuk ikon */
 }
 
+.required {
+  color: red; /* Warna merah */
+  font-weight: bold; /* Agar teks terlihat lebih menonjol (opsional) */
+}
+
 /* Styling untuk password icon */
 .password-icon {
   position: absolute; /* Posisi absolut untuk ikon */
-  top: 70%; /* Menempatkan di tengah vertikal */
-  left: calc(100% - 30px); /* Jarak dari kanan */
-  transform: translateY(-50%); /* Memindahkan ke tengah */
-  font-size: 1.2em; /* Ukuran font ikon */
+  top: 50%; /* Menempatkan di tengah vertikal */
+  left: calc(100% - 35px); /* Jarak dari kanan */
+  transform: translateY(-10%); /* Memindahkan ke tengah */
+  font-size: 1.5em; /* Ukuran font ikon */
   color: #333; /* Warna ikon */
   cursor: pointer; /* Kursor pointer */
 }
@@ -139,10 +143,10 @@ form {
 
 /* Styling untuk buttons */
 button {
-  padding: 10px; /* Padding dalam tombol */
+  padding: 15px; /* Padding dalam tombol lebih besar */
   border-radius: 10px; /* Sudut yang dibulatkan */
   cursor: pointer; /* Kursor pointer */
-  font-size: 1em; /* Ukuran font tombol */
+  font-size: 1.2em; /* Ukuran font tombol lebih besar */
   width: 100%; /* Lebar penuh */
   border: 0; /* Tanpa border */
   background-color: transparent; /* Latar belakang transparan */
@@ -177,6 +181,7 @@ button {
   border-top: 1px solid #dcdcdc; /* Garis atas */
   text-align: center; /* Teks di tengah */
 }
+
 /* Google Login */
 .google-login {
   color: #595959; /* Warna teks untuk login Google */
@@ -202,15 +207,15 @@ button {
 /* Media Query untuk Responsivitas */
 @media (max-width: 768px) {
   .login-box {
-    margin-top: 0.2px;
-    width: 70%; /* Lebar 70% pada layar kecil */
-    padding: 20px; /* Padding dalam box */
+    margin-top: 10px; /* Kurangi margin atas untuk layar lebih kecil */
+    width: 80%; /* Lebar 80% pada layar menengah */
+    padding: 30px; /* Kurangi padding dalam box */
   }
 }
 
 @media (max-width: 480px) {
   .login-box {
-    width: 70%; /* Lebar 90% pada layar sangat kecil */
-    padding: 15px; /* Padding dalam box */
+    width: 75%; /* Lebar 90% pada layar sangat kecil */
+    padding: 20px; /* Kurangi padding dalam box */
   }
 }

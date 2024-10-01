@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./LoginForm.css";
-import { MdVisibility, MdVisibilityOff } from "react-icons/md"; // Import ikon visibility
-import logo from "./assets/logo.png"; // Pastikan path logo sudah benar
+import { MdVisibility, MdVisibilityOff } from "react-icons/md";
+import logo from "./assets/logo.png";
 import googleIcon from "./assets/google.svg";
 
 const LoginForm = ({ toggleForm }) => {

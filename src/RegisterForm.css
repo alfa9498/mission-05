@@ -1,6 +1,3 @@
-/* Styling dasar */
-body,
-html,
 #root {
   height: 100%;
   margin: 0;
@@ -24,7 +21,7 @@ html,
   background-color: white;
   padding: 20px 0;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start; /* Mengatur logo ke sebelah kiri */
 }
 
 /* Box Logo */
@@ -32,8 +29,9 @@ html,
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 237px;
-  height: 56px;
+  width: 237px; /* Lebar logo sesuai permintaan */
+  height: 56px; /* Tinggi logo sesuai permintaan */
+  margin-left: 20px; /* Memberikan sedikit jarak dari tepi kiri */
 }
 
 .register-logo {
@@ -46,56 +44,61 @@ html,
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 40px;
-  padding: 36px 0;
+  margin-top: 50px; /* Sesuaikan margin atas */
+  padding: 36px 0; /* Kurangi padding atas dan bawah */
+  width: 100%; /* Lebar penuh */
+  height: auto; /* Tinggi otomatis */
 }
-
 /* Box Register */
 .register-form-box {
   text-align: center;
-  width: 100%;
-  max-width: 600px;
-  padding: 20px;
-  background-color: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Gunakan 100% lebar */
+  max-width: 600px; /* Lebar maksimum diperbesar */
+  padding: 40px; /* Padding lebih besar untuk konten */
+  background-color: #ffffff; /* Latar belakang putih untuk login box */
+  border-radius: 12px; /* Sudut yang dibulatkan lebih besar */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Bayangan lebih besar */
 }
 
 /* Heading dan Paragraf */
 .register-form-box h2 {
   font-family: "Poppins", sans-serif;
-  font-size: 1.8em;
-  color: #333;
-  margin-bottom: 10px;
+  font-size: 2em; /* Ukuran font judul lebih besar */
+  color: #333; /* Warna teks */
+  margin: 0 0 20px; /* Jarak bawah */
 }
 
 .register-form-box p {
   font-family: "Poppins", sans-serif;
-  color: #666;
-  margin-bottom: 20px;
+  text-align: center; /* Teks di tengah */
+  color: #666; /* Warna teks */
+  margin: 0 0 30px; /* Jarak bawah */
 }
 
 /* Styling form */
 .register-form {
+  font-family: "DM Sans", sans-serif;
+  color: #666; /* Warna teks */
+  text-align: left;
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 15px; /* Jarak antar elemen form ditambah */
 }
-
 /* Styling untuk input */
 .register-input-field {
   font-family: "Poppins", sans-serif;
-  width: 100%;
-  padding: 10px;
-  border: 2px solid #dcdcdc;
-  border-radius: 8px;
-  font-size: 1em;
-  box-sizing: border-box;
+  width: 100%; /* Lebar penuh */
+  padding: 15px; /* Padding lebih besar */
+  border: 2px solid #dcdcdc; /* Border */
+  border-radius: 8px; /* Sudut yang dibulatkan */
+  font-size: 1.1em; /* Ukuran font */
+  box-sizing: border-box; /* Memastikan padding termasuk dalam lebar */
 }
 
 /* Styling untuk form-group */
 .register-form-group {
-  text-align: left;
+  text-align: relative;
 }
 
 /* Bendera + kode telepon */
@@ -127,10 +130,14 @@ button {
 
 /* Link Lupa Password */
 .register-forgot-password {
-  font-size: 0.9em;
-  color: #626364;
-  text-align: right;
-  margin-bottom: 10px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  color: #626364; /* Warna untuk teks lupa password */
+  text-decoration: none; /* Tanpa garis bawah */
+  font-size: 16px; /* Ukuran font */
+  margin-bottom: 10px; /* Jarak bawah */
+  display: block; /* Menggunakan block untuk lebar penuh */
+  text-align: right; /* Teks di kanan */
 }
 
 .register-forgot-password:hover {
